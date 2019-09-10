@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "953566958732",
+    "firebase_url": "https://eunho-8b396.firebaseio.com",
+    "project_id": "eunho-8b396",
+    "storage_bucket": "eunho-8b396.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953566958732:android:e15594eba97f2754",
+        "android_client_info": {
+          "package_name": "eun.com.euntalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953566958732-gt4apbi7ahusajaqaals0ps55dvv6uve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOdL6fIh20Xu2k88faj9cXbDa_KE-8C3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953566958732-gt4apbi7ahusajaqaals0ps55dvv6uve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

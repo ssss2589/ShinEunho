@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		var header = document.createElement('h1');
+		var textNode = document.createTextNode('Hello DOM');
+		//노드를 연결
+		header.appendChild(textNode);//header의 자식으로 textNode를 추가하겠다.
+		document.body.appendChild(header);//document.body에 접근해서 위에서 만든 header를 적용하겠다.
+	};
+</script>
+</head>
+<body>
+	<h1>Text Node</h1>
+</body>
+</html>

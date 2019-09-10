@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		var header= document.getElementById('header');
+		//문서 객체를 가져옵니다.
+		header.style.border = '2px solid black';
+		header.style.color = 'orange';
+		header.style.fontFamily = 'helvetica';
+	};
+	/*
+	$(document).ready(function(){
+		$('h1').css('color','orange');
+	}); //제이커리를 사용하면 위에 예시보다 더욱 쉽게 활용 가능.
+	*/
+</script>
+</head>
+<body>
+	<h1 id="header">Header</h1>
+</body>
+</html>

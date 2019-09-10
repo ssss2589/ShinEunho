@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function whenSubmit(form){
+		if(form.name.value==""){
+		alert("아이디를 입력해주세요");
+		return false;
+		}else{
+		
+		}
+	}
+</script>
+</head>
+<body>
+	<form onsubmit="return whenSubmit(this);" name="form">
+		<label for="name">이름</label><br/>
+		<input type ="text" name="name" id="name"/><br/>
+		<label for="pass">비밀번호</label><br/>
+		<input type ="password" name="pass" id="pass"><br/>
+		<label for="pass-check">비밀번호 확인</label><br/>
+		<input type ="password" name="passcheck" id="pass"><br/>
+		<input type = "submit" value="제출" />
+	</form>
+</body>
+</html>

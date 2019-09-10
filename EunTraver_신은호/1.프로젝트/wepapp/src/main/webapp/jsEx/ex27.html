@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var value = 0;
+	
+	while(value<5){
+		alert(value+"번째 반복");
+		value++;
+	}
+	value = 0;
+	
+	do{
+		alert(value + '번째 반복문');
+		value++;
+	}while(value < 5);
+	value = 0;
+	
+	for(var value = 0; value < 5; value++){
+		alert(value + "번째 반복문");
+	}
+	//<연습 문제>
+	var fruit = ["포도","사과","바나나","망고"];
+	
+	for(var i in fruit){
+		alert(fruit[i]);
+	}
+	
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <h3>*리스트 , 리스트 박스 연습*</h3>
+   <HR>
+   <BR>
+   <form method="get" action="/wepapp/ServletEx5">
+      <select name="color" size="1"><!-- 자바에서 콤보박스 -->
+         <option value="빨간색">빨간색
+         <option value="파란색">파란색<!-- 넘길때 value값으로 넘어감 -->
+         <option value="노란색">노란색 <!-- 옆에 글씨는 라벨! -->
+      </select>
+      <P>
+         좋아하는 과일 <BR> <select name="fruit" size="3" multiple> <!-- multiple: 다중선택이 가능해짐. -->
+            <option value="사과">사과
+            <option value="배">배
+            <option value="오렌지">오렌지
+         </select>
+         <input type="submit" value="내용 확인"> <BR>
+   </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>태그 연습장</title>
+<meta charset="UTF-8">
+<style type="text/css"> 
+body
+{ 
+scrollbar-face-color:#dedede; 
+scrollbar-shadow-color:gray; 
+scrollbar-highlight-color:#ffffff;
+scrollbar-3dlight-color:#dedede; 
+scrollbar-darkshadow-color:#ffffff; 
+scrollbar-track-color:#f0f0f0; 
+scrollbar-arrow-color:#dedede
+} 
+input{background-color:#000000; color:white; border:0; height:18;font-family:돋움; font-size:12px; cursor: hand;}
+</style> 
+
+<script language=javascript>
+
+/*코딩1 : 결과확인 */
+function popup(obj){
+var child = window.open('','','width=300, height=200');
+var s = obj.editor.value;
+child.document.write(s);
+}
+
+/*코딩2 : 다지워 */
+function set(){
+ frm.editor.value="";
+}
+
+</SCRIPT>
+
+</head>
+
+<body topmargin=50>
+
+<center>
+
+<form name=frm>
+
+<!-- 코딩3 --><input type=button value="웹브라우저로 보기" onclick="popup(this.form)"/>
+
+<!-- 코딩4 --><input type=button value="새 문서" onclick="set()" />
+
+
+<input type=reset value="새 HTML 페이지">
+
+<p>
+<textarea cols="60" name=editor rows="20" style="padding:5; border: 2 silver solid;">
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt; &lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+
+&lt;/html&gt; 
+</textarea>
+
+</form>
+
+</center>
+
+</body>
+
+</html>

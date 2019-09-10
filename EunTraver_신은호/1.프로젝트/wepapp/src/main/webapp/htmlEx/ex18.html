@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action ="/wepapp/MemberServletList" method="post">
+		<fieldset>
+			<legend>회원가입</legend>
+			<p>아이디 : <input type= "text" size="12" maxlength ="8" name ="id" /></p> <!-- maxlength:길이제한 --> 
+			<p>비밀번호 : <input type= "password" size="12" maxlength ="8" name="pw" /></p><!-- password:암호화되서 입력 -->
+			<p>메일 수신 여부 :
+			<input type = "radio" value = "y" name = "receive" />예
+			<input type = "radio" value = "n" name = "receive" />아니요
+			</p>
+			<p>관심 분야:
+			<input type = "checkbox" value = "HTML" name = "chk1" />HTML
+			<input type = "checkbox" value = "CSS" name = "chk1" />CSS
+			<input type = "checkbox" value = "Javascript" name = "chk1" />Javascript
+			</p>
+			<p>
+			<input type = "submit" value = "전송" />
+			<input type = "reset" value = "취소" />
+			<input type = "button" value = "확인" />
+			<input type = "image" src ="img/Koala.jpg" alt="검색" />
+			</p>
+			<p>파일 올리기 : <input type ="file" /> </p>
+			<p><input type ="hidden"/> </p> <!-- 숨길때  사용-->
+		</fieldset>
+	</form>;
+</body>
+</html>

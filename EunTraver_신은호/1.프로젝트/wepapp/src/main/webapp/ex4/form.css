@@ -1,0 +1,37 @@
+/*공통요소*/
+body,td,th, textarea, input,select, .button{color:#2A3D9C; font-size:12px; font-family:돋움;  
+text-align:center ; vertical-align:middle}
+
+/*여러줄 입력상자*/
+textarea{background-color:white;text-align:left;
+border:dotted 2 #6699CC;  margin: 3px;
+scrollbar-face-color:skyblue; 
+scrollbar-shadow-color:#6699CC;
+scrollbar-highlight-color: #6699CC;
+scrollbar-3dlight-color: #ffffff;
+scrollbar-darkshadow-color: #ffffff;
+scrollbar-track-color: #ffffff;
+scrollbar-arrow-color: #99CCFF}
+
+/*버튼*/
+.button{color:white; background-color: #6699CC; 
+border-width:0; height:18; cursor:hand;}
+
+/*입력상자*/
+input{border:dotted 2 #6699CC; background-color:transparent ; margin-bottom: 3px; }
+
+/*목록상자*/
+select{background-color:white ; }
+
+/*스타일 적용안함*/
+.nostyle{border:0 ; background-color:transparent}
+
+/*표*/
+table{border-collapse:collapse ; background-color: white; padding:5 ; border:1 solid #6699CC  }
+td{padding:0,20 ;text-align:left ;}
+th{text-align:right ; font-weight:normal ;padding:0,20 ;}
+tr{height:40}
+.trbg1{background-color: #FFDDEE;}
+
+/*제목*/
+h2{color:navy ; font-size:15pt; font-family : 느낌체, arial black ; text-align:center}

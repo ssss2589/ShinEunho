@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#search{
+	width:200px;
+	margin:0 auto;
+}
+body {
+  color: rgba(0, 0, 0, 0.6);
+  font-family:  font-family: "돋움", dotum, "굴림", gulim, arial, helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 3em;
+}
+#text{
+	width: 300px;
+	padding: 12px;
+	 border-radius: 4px;
+}
+.form {
+  background: #FFFFFF;
+  width: 600px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin: 100px auto 10px;
+  overflow: hidden;
+}
+.button {
+  background: #4285F4;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.check {
+  background: #4285F4;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}

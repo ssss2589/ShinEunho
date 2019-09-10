@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		//이벤트를 연결합니다.
+		document.getElementById('my-form').onsubmit = function(){
+			var pass=document.myfore.pass.value;
+			var passcheck=document.myfore.passcheck.value;
+			alert(pass);
+			if(pass==passcheck){
+			return true;
+			}else{
+			return false;
+			}
+		};
+	};
+</script>
+</head>
+<body onsubmit="">
+	<form id="my-form" name="myfore">
+		<label for="name">이름</label><br/>
+		<input type ="text" name="name" id="name"/><br/>
+		<label for="pass">비밀번호</label><br/>
+		<input type ="password" name="pass" id="pass"><br/>
+		<label for="pass-check">비밀번호 확인</label><br/>
+		<input type ="password" name="passcheck" id="pass"><br/>
+		<input type = "submit" value="제출" />
+	</form>
+</body>
+</html>

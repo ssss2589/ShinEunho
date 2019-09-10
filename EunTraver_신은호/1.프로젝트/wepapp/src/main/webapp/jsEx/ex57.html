@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var headers = document.getElementsByTagName('h1');//모든 h1을 가져온다.(배열)
+		//ex1)
+		headers[0].innerHTML = '변경1';
+		headers[1].innerHTML = '변경2';
+		//ex2)
+		for(var i=0; i<headers.length;i++){
+			header[i].innerHTML = '변경' + i;
+		}
+		
+		var output='';
+		for(var i in headers){
+			output += i + '\n';
+		}
+		alert(output);
+	};
+</script>
+</head>
+<body>
+	<h1>Header</h1>
+	<h1>Header</h1>
+</body>
+</html>

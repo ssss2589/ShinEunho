@@ -1,0 +1,4 @@
+CREATE TABLE `and_friend` (
+  `My` varchar(20) NOT NULL,
+  `friend` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

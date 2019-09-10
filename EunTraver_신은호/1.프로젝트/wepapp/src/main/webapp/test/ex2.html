@@ -1,0 +1,83 @@
+
+<html>
+<head>
+<title> 아이스크림으로 알아보는 심리테스트 </title>
+<meta charset="UTF-8">
+<SCRIPT language=JavaScript>
+
+
+function displayMsg(form){ 
+
+	var title=new Array
+	var msg=new Array
+
+
+	title[0]="바닐라 아이스크림을 좋아하는 사람은.."
+	msg[0]="항상 영화약속을 만들고 좋은 영화를 선정하며, 매너가 좋아 같이 영화를 보러 간 사람에게 그야말로 짱이지만, 바람둥이인데 한가지 흠이다."
+
+	title[1]="딸기 아이스크림을 좋아하는 사람은..  "
+	msg[1]="콧대가 높아 항상 자기만의 영화와 영화관을 고집하지만 겉보기와는 달리 따뜻하고 애교스러운 점도 많다. 그래서 오랫동안 함께 있어도 질리지 않는 타입. "
+
+	title[2]="초코 아이스크림을 좋아하는 사람은..  "
+	msg[2]="영화를 보자고 약속을 만들었다가 귀찮다고 약속을 취소하곤 하는 성격의 소유자. 하지만 영화를 보자고 하면 장르 구분 없이 항상 잘 따라주는 좋은 성격의 소유자."
+
+	title[3]="팥빙수를 좋아하는 사람은..  "
+	msg[3]="내성적이어서 영화를 보자고 선뜻 말하지는 못하지만 내심 상대방이 먼저 영화 보자고 권해주기를 바라는 타입. 하지만 영화를 보자고 권한 사람에게 그날을 매우 즐겁게 해줄 만큼 유머감각을 타고난 이야기꾼이기도 하다. "
+
+	/*코딩1*/
+	
+	if(form.ice.value==1){
+		var child = window.open('','','width=500, height=500');
+		child.document.write("<FONT style= 'color: #FAF4C0;'>"+"<h3>"+title[0]+"<h3>");
+		child.document.write("<h4>"+msg[0]+"<h4>");
+	}else if(form.ice.value==2){
+		var child = window.open('','','width=500, height=500');
+		child.document.write("<h3>"+title[1]+"<h3>");
+		child.document.write("<h4>"+msg[1]+"<h4>");
+	}else if(form.ice.value==3){
+		var child = window.open('','','width=500, height=500');
+		child.document.write("<h3>"+title[2]+"<h3>");
+		child.document.write("<h4>"+msg[2]+"<h4>");
+	}else if(form.ice.value==4){
+		var child = window.open('','','width=500, height=500');
+		child.document.write("<h3>"+title[3]+"<h3>");
+		child.document.write("<h4>"+msg[3]+"<h4>");
+	}
+}
+
+
+</SCRIPT>
+
+
+
+</head>
+
+<body>
+<form name=frm>
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr><td><img src="images/ice.jpg"></td></tr>
+  <tr>
+    <td bgcolor="#F5D8E1" height="40" align="center"> 
+
+      <!-- 코딩2 -->
+	  <input type="radio" value=1 name=ice>바닐라 아이스크림 
+      <input type="radio" value=2 name=ice>딸기 아이스크림 
+      <input type="radio" value=3 name=ice>초코 아이스크림 
+      <input type="radio" value=4 name=ice>혼자 튀는 팥빙수
+
+
+	</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FCF1F4" align="center" height="40">
+
+		<!-- 코딩3 -->
+		<input type="image" src="images/ice_button.gif" onclick="displayMsg(this.form)">
+
+	</td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>

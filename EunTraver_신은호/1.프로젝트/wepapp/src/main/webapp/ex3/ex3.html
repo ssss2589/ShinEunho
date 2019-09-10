@@ -1,0 +1,192 @@
+
+<html>
+    <head><meta charset="UTF-8">
+        <title>폼양식의 name속성 값 모두 출력하기</title>
+        <style>td{font-size:9pt}</style>
+
+        <!-- 코딩1 ----------------------------------------------------------------------- -->
+		<script type="text/javascript">
+			
+			function IdCheak(){
+				frm1.action="/wepapp/test";
+				frm1.submit();
+			}	
+			
+			/*
+			var id= document.getElementById('id');
+			if(id.value == ""){
+				alert("아이디를 입력해주세요.");
+			}else{
+				var url="idcheck.jsp=" + id.value;
+				window.open(url,"popup_win",'width=300 height=300');
+			}
+			*/
+			var str="";
+			function formPrint(){
+				var formName = new Array();//배열 변수 생성
+				var ele = "";
+				for(var i=0;i<frm1.elements.length;i++){//배열공간에 값 저장
+					formName[i]=frm1.elements[i].name;
+				}
+				for(var i=0;i<frm1.elements.length;i++){
+					if(i<10)// 배열번호가 한자리면 공백을 두어 글자 위치를 나란하게 맞춘다
+							ele="elements[  "
+					else
+							ele="elements["
+					str = str+ele+i+"]     "+formName[i]+"\n";//실제 출력될 문자
+				}
+				alert(str);//경고창으로 출력
+			}
+		</script>
+    </head>
+    <body>
+
+    <center>
+        <img src="title.gif" width=476 height=89 alt= border=0><br>
+		<input type=button value="폼양식의 name 속성 값 모두 출력하기" onclick="formPrint()">
+    </center><br>
+
+    <form name=frm1>
+        <table border=0 align=center cellspacing=1 bordercolor=white bordercolorlight=DarkRed bgcolor=PapayaWhip width=600>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td colspan=2 bgcolor=PeachPuff align=center height=30><b>필수 입력사항</b></td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center width=100>아이디</td>
+                <td>
+                    <input type=text name=id size=12 maxlength=12 id=id>
+                    <input type=image src="ok1.gif" align=absmiddle onclick=IdCheak();>
+                    영어 및 숫자만 허용 (4자 부터 12자 이내)</td>
+            </tr>
+
+            <tr>
+                <td bgcolor=PeachPuff align=center>비밀번호</td>
+                <td> 
+                    <input type=password name=pw size=12 maxlength=12>
+                    비밀번호 확인 : <input type=text name=pw2 size=12 maxlength=12>
+                    (영어, 숫자만 사용)</td>
+            </tr>
+
+            <tr>
+                <td bgcolor=PeachPuff align=center>이름</td>
+                <td><input type=text name=irum size=12 maxlength=20></td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>주민등록번호</td>
+                <td>
+                    <input type=text name=jumin1 size=6 maxlength=6>-
+                    <input type=text name=jumin2 size=7 maxlength=7></td>
+            </tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>실제 생일</td>
+                <td>
+                    <input type=text name=birth1 size=4 maxlength=4>년
+                    <input type=text name=birth2 size=2 maxlength=2>월
+                    <input type=text name=birth3 size=2 maxlength=2>일
+                    <input type=radio name=birth_chk value=1 checked>양력
+                    <input type=radio name=birth_chk value=2>음력	</td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>E-mail주소</td>
+                <td>
+                    <input type=text name=email1 size=12 maxlength=12>@
+                    <select name=email2>
+                        <option value=1 SELECTED>선택해 주세요</option>
+                        <option value=2>daum.net</option>
+                        <option value=3>dremwiz.com</option>
+                        <option value=4>hotmail.com</option>
+                        <option value=5>naver.com</option>
+                    </select>   
+                    <input type=radio name=email_chk value= checked>선택입력 
+                    <input type=radio name=email_chk value=>직접입력<br>
+                    한메일(다음넷)은 등록할 수 없습니다.</td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td colspan=2 bgcolor=PeachPuff align=center height=30><b>선택 입력사항</b></td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>전화번호</td>
+                <td>
+                    <input type=text name=tel1 size=3 maxlength=3>-
+                    <input type=text name=tel2 size=4 maxlength=4>-
+                    <input type=text name=tel3 size=4 maxlength=4></td>
+            </tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>휴대폰번호</td>
+                <td>
+                    <select name=phone1>
+                        <option value=1 SELECTED>선택</option>
+                        <option value=2>011</option>
+                        <option value=3>016</option>
+                        <option value=4>017</option>
+                        <option value=5>018</option>
+                        <option value=6>019</option>
+                    </select>-
+                    <input type=text name=phone2 size=4 maxlength=4>-
+                    <input type=text name=phone3 size=4 maxlength=4></td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>우편번호</td>
+                <td>
+                    <input type=text name=post1 size=3 maxlength=3>-
+                    <input type=text name=post2 size=3 maxlength=3>
+                    <input type=image src="ok2.gif" align=absmiddle></td>
+            </tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>주소</td>
+                <td><input type=text name=add1 size=40 maxlength=50></td>
+            </tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>나머지 주소 </td>
+                <td><input type=text name=add2 size=40 maxlength=50>
+                    (동 이하의 주소를 입력)</td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+
+
+            <tr>
+                <td bgcolor=PeachPuff align=center>메일링서비스</td>
+                <td> 
+                    <input type=radio name=mailling value=1 checked>허용 
+                    <input type=radio name=mailling value=2>허용안함</td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td bgcolor=PeachPuff align=center>관심분야</td>
+                <td> 
+                    <input type=checkbox name=favorite1 value=1>공연
+                    <input type=checkbox name=favorite2 value=2>스포츠 
+                    <input type=checkbox name=favorite3 value=3>컴퓨터 
+                    <input type=checkbox name=favorite4 value=4>연예 
+                    <input type=checkbox name=favorite5 value=5>쇼핑 
+                    <input type=checkbox name=favorite5 value=5>건강 </td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+
+            <tr>
+                <td bgcolor=PeachPuff align=center>자기 소개</td>
+                <td><textarea cols=65 rows=5 name=memo></textarea></td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+            <tr>
+                <td colspan=2 bgcolor=PeachPuff align=center height=30>	
+                    <input type=button value=가입하기 onclick="document.location = 'member4.htm'">
+                    <input type=reset value=다시입력>	
+                </td>
+            </tr>
+            <tr><td colspan=2 height=2 background="dot.gif"></td></tr>
+
+        </table>
+    </form>
+
+
+
+</body>
+</html>

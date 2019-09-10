@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* #hj_login_button {
+	width: 500px; height: 50pt;
+}  */
+
+#hj_login {
+	margin-right:10%;
+	float: right;
+	text-align: center;
+}
+
+#hj_login label{
+	font-size: 13px;
+	text-align: right;
+}
+#hj_sideForm {
+	float: right;
+	margin-right: 4%;
+	width:300px;
+}
+#hj_member{
+	margin-right:10%;
+	float:right;
+	text-align :center;
+}
+#hj_side_login{
+	border: solid 2px gray; 
+	height: 100px;
+}
+#body {
+	margin-left: auto;
+	margin-right: auto;
+}
+#good_board {
+		margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#hj_join table {
+	margin: auto;
+}
+
+#hj_join p {
+	text-align: center;
+}

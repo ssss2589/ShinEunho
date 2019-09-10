@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+	<form action="/wepapp/ServletEx7" method ="post">
+	<fieldset>
+		<legend>회원가입</legend>
+		<table width = "100%">
+			<caption>회원가입 서식 작성</caption>
+			<colgroup>
+			<col width ="30%">
+			<col width ="70%">
+			</colgroup>
+			<tr>
+			<th>이름</th>
+			<td>
+			<input type="text" size="20" maxlength="5" name="name">
+			</td>
+		</tr>
+		<tr>
+			<th>아이디</th>
+			<td>
+			<input type="text" size="20" maxlength="8" name="id">
+			</td>
+		</tr>
+		<tr>
+			<th>비밀번호</th>
+			<td>
+			<input type="password" size="20" maxlength="8" name="pw">
+			</td>
+		</tr>
+		<tr>
+			<th>비밀번호확인</th>
+			<td>
+			<input type="password" size="20" maxlength="8" name="pw2">
+			</td>
+		</tr>
+		<tr>
+			<th>주민번호</th>
+			<td>
+			<input type="number" size="20" maxlength="6"  name="rrn"> -
+			<input type="number" size="20" maxlength="7"  name="rrn">
+			</td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td>
+			<input type="text" size="20" name="email"> @
+			<input type="text" size="20" name="email" >
+			</td>
+		</tr>
+		<tr>
+			<th>핸드폰</th>
+			<td>
+			<input type="number" size="20" maxlength="11" name="phone">
+			</td>
+		</tr>
+		</table>
+		
+		<input type = "submit" value = "전송" />
+		<input type = "reset" value = "취소" />
+
+	</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:src="@drawable/kakao" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/view_id"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:text="아이디" />
+
+        <EditText
+            android:id="@+id/id_memo"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:hint="아이디 입력" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="중복확인"
+            android:background="#FFEB3B"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:text="비밀번호"
+            android:id="@+id/view_pw"
+            />
+
+        <EditText
+            android:id="@+id/pw_memo"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 입력" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/view_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:text="이름"
+            />
+
+        <EditText
+            android:id="@+id/name_memo"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:hint="이름 입력" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/view_image"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:text="프로필 사진" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진 선택"
+            android:background="#FFEB3B"
+            android:onClick="imageB"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:onClick="go"
+            android:text="확인" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            android:id="@+id/back"
+            android:background="#FFEB3B"
+            android:onClick="back"
+            />
+    </LinearLayout>
+</LinearLayout>

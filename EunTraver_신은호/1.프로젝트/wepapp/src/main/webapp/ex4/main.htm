@@ -1,0 +1,68 @@
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>전자 우편 보내기</title>
+<link rel="stylesheet" href="form.css" type="text/css">
+
+<!-- 코딩1 -->
+<script>
+function newWin()
+{
+	window.open("address.htm","","width=500 height=300")
+}
+</script>
+
+</head>
+
+<body>
+
+<form name=frm>
+<table align="center" border="1" width="560">
+    <tr>
+        <td width="550" colspan="2" style="text-align:center; font-size : 15pt ; font-weight:bold ; background-color: skyblue ;">
+            전자 우편 보내기
+        </td>
+    </tr>
+    <tr>
+        <th width="100">보내는 사람</th>
+        <td width="450">
+            <select name="fromAdd" size="1">
+				<option value="lucy922@daum.net">lucy922@daum.net</option>
+				<option value="luciaju@hotmail.com">luciaju@hotmail.com</option>
+				<option value="happylucy@naver.com">happylucy@naver.com</option>
+            </select> 
+		<input type="checkbox" name="ch" checked class=nostyle>서명 파일 첨부
+        </td>
+    </tr>
+    <tr>
+        <th>받는 사람</th>
+        <td>
+            <input type="text" name="toAdd" maxlength="100" size="50">
+			<!-- 코딩2 -->
+			<input type="button" value="주소록" class=button onclick="newWin()">
+        </td>
+    </tr>
+    <tr>
+        <th>제목</th>
+        <td><input type="text" name="title" maxlength="100" size="50"></td>
+    </tr>
+    <tr>
+        <th>내용</th>
+        <td><textarea name="contents" rows="9" cols="50"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center; background-color: skyblue ;">
+            <input type="button" value="편지 보내기" class=button> 
+			<input type="reset" value="내용 지우기" class=button>
+        </td>
+    </tr>
+</table>
+
+</form> 
+
+
+</body>
+
+</html>

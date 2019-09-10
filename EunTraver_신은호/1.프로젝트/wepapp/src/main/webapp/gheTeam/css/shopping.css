@@ -1,0 +1,99 @@
+body{
+    background-color:#B96DB5;
+    margin:0;
+    padding:0;
+    font-size:0.75em;
+}
+
+table#cartList {
+    border-collapse:collapse;  
+    border-top: 2px solid  #333;    
+    border-bottom: 1px solid  #333; 
+    width:100%;              
+    margin-bottom: 20px;
+}
+
+table#cartList th, td{	
+    border-bottom: 1px dotted  #333; 
+	text-align: center;
+}
+
+
+#main_img{
+	text-align: center;
+} 
+#main_img img{
+    margin:9px 0 0 0; 
+}
+
+div#front{
+    margin:5px 0 5px 20px;
+}
+
+#sub_img {
+	text-align: center;
+}
+
+#sub_img img {
+	margin: 9px 0 0 0;
+}
+
+#sub_menu {
+	width: 250x;
+	float: left;
+	margin: 20px 0;
+}
+
+#sub_menu ul {
+	margin: 20px 0 0 16px;
+	list-style: none;
+}
+
+#sub_menu a {
+	text-decoration: none;
+	color: white; font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold; font-size:16px;
+	display: block;
+	height: 15px;
+	width: 160px;
+	padding: 7px;
+	border-bottom: 1px dotted #999;
+	background-image: url(../images/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#sub_menu a:hover {
+	background-image: url(../images/bullet_orange.gif);
+	background-repeat: no-repeat; 
+	background-position: right center;
+	color: #F90;font-weight:bold; font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+	width: auto;
+	padding-right: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em; 
+}
+
+
+form {
+	margin: 10px 0 0 0;
+	width: 670px;
+}
+
+form input {
+	margin: 5px 0; 
+	border: 1px solid #999; 
+	background-color: #FCFDEA; 
+}
+
+form  .btn {
+	height: 30px; 
+	width: 70px; 
+	border-radius: 10px;
+	font-size: 14px; 
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+h1 {
+	font: 40px "판타지", Fantasy;
+}
+
+table {
+	align-content: center;
+}
+
+</style>
+</head>
+<body>
+	<form action="/wepapp/MemberServletEx" method="post">
+	<h1 align="center" style="color: green;">Eun-style</h1>
+	<fieldset>
+		<legend">회원가입</legend>
+		<table>
+			<tr>
+				<td>
+					<h3>이름</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="text" maxlength="5" name="name"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>아이디</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="text" maxlength="8" name="id"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>비밀번호</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="password" maxlength="8" name="pw"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>비밀번호 재확인</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="password" maxlength="8" name="pw2"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>성별</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type=radio name="sex" value="남자">남자
+					<input type=radio name="sex" value="여자">여자
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>주민번호</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="number" size="20" maxlength="6" name="rrn">
+					- <input type="number" size="20" maxlength="7" name="rrn">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>이메일</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="text" size="20" name="email"> @ <input
+					type="text" size="20" name="email"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>휴대전화</h3>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="number" size="20" maxlength="11" name="phone"></td>
+			</tr>
+		</table>
+		<input type = "submit" value = "전송" />
+		<input type = "reset" value = "취소" />
+	</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title> 주소록에서 받는 사람 고르기 </title>
+
+        <link rel="stylesheet" href="form.css" type="text/css">
+
+        <script language="javascript">
+   		function listplus(){
+   			var idx = document.frm.oldAdd.selectedIndex;
+   			if(idx>0){
+   			var old= document.frm.oldAdd.value;
+   			 var op = new Option();
+   		 	op.text=old;
+   			document.frm.newAdd.add(op);
+   			if(idx>-1) document.frm.oldAdd.options[idx] = null;
+   			}else{
+   				alert("주소를 선택해주세요.");
+   			}
+   		}
+   		function listdelete(){
+   			var idx = document.frm.newAdd.selectedIndex;
+   			if(idx>0){
+   			var old= document.frm.newAdd.value;
+   			 var op = new Option();
+   			if(idx>-1) document.frm.newAdd.options[idx] = null;
+   			op.text=old;
+   			document.frm.oldAdd.add(op);
+   			}else{
+   				alert("주소를 선택해주세요.");
+   			}
+   		}
+   		
+   		function listmain(){
+   			var allAdd="";
+   			var newAddOption = new Array();
+   			var n= document.frm.newAdd.length;
+   			for(var i=1;i<n;i++){
+   				newAddOption[i] = document.frm.newAdd.options[i].text
+   				allAdd	+= newAddOption[i]+","  
+   			}
+   			opener.document.frm.toAdd.value=allAdd;
+   			self.close();
+   			opener.document.frm.toAdd.focus();
+   		}
+        </script>
+
+    </head>
+    <body bgcolor=#99CCFF>
+
+        <h2>이메일 주소록</h2>	
+
+        <form name=frm>
+
+            <table class=nostyle>
+                <tr><td>
+
+                        <select name="oldAdd" size=10>
+                            <option>등록된 주소록</option>
+                            <option>donggri@daum.net</option>
+                            <option>tastas@hotmail.com</option>
+                            <option>musicball@naver.com</option>
+                            <option>eunchiri@daum.net</option>
+                            <option>music@dreamwiz.com</option>
+                            <option>freegirl@korea.com</option>
+                            <option>badboy@nate.com</option>
+                        </select> 
+
+                    </td><td>
+
+                        <!-- 코딩4 -->
+                        <input type="button" value="추가" class="button" onclick="listplus()"><p>
+                            <!-- 코딩5 -->
+                            <input type="button" value="삭제" class="button" onclick="listdelete()">
+
+                    </td><td>
+
+                        <select name="newAdd" size=10>
+                            <option>받는 사람으로 추가될 주소</option>
+                        </select>
+
+                    </td></tr></table><p>
+
+                <!-- 코딩6 -->
+                <input type="button" value="받는 사람으로 추가" class="button" onclick="listmain()">
+
+        </form>
+
+
+    </body>
+</html>

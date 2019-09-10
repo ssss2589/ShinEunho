@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//변수를 선언합니다.
+	var input = Number(prompt('숫자를 입력하세요.','숫자'));
+	
+	switch (input % 2){
+	case 0:
+		alert('짝수입니다.');
+		break;
+	case 1:
+		alert('홀수입니다.');
+		break;
+	default:
+		alert('숫자가 아닙니다.');
+		break;
+	}
+	
+	var date = new Date();
+	var hour = date.getHours();
+	switch(true){
+	case hour < 11:
+		alert('아침 먹을 시간입니다.');
+		break;
+	case hour < 15:
+		alert('점심 먹을 시간입니다.');
+		break;
+	default:
+		alert('저녁 먹을 시간입니다.');
+		break;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

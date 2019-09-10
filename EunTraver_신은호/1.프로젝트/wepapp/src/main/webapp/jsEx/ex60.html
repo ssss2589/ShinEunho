@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload =function(){
+		var header = document.getElementById('header');
+		//ex1)
+		/*header.onclick = function(){
+			alert('클릭');
+		};*/
+	};
+	//ex2)
+	function whenClick(){
+		alert('CLICK');
+	}
+	//ex3)
+	/*
+		function whenClick(){
+		alert('CLICK');
+	}
+	header.onclick = whenClick;
+	*/
+</script>
+</head>
+<body>
+	<h1 id="header" onclick="whenClick()">Header</h1>
+	<!-- <h1 id="header">Header</h1> -->
+</body>
+</html>
